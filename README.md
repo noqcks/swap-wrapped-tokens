@@ -16,7 +16,7 @@ This should work for other wrapped tokens too, like WMATIC.
 
 ## Script
 
-The conversion script is located at `scripts/wrapped-eth.py`
+The conversion script is located at `scripts/wrapper.py`
 
 You only need to modify the const `AMOUNT` at the top of the file to your preference.
 
@@ -27,7 +27,7 @@ We are minting ETH from WETH.
 Example
 
 ```
-brownie run scripts/wrapped-eth.py --network kovan get_eth
+brownie run scripts/wrapper.py --network kovan get_eth
 ```
 
 ## Convert ETH to WETH
@@ -37,5 +37,5 @@ We are minting WETH from ETH.
 Example
 
 ```
-brownie run scripts/wrapped-eth.py --network kovan get_weth
+brownie run scripts/wrapper.py --network kovan get_weth
 ```
